@@ -8,36 +8,18 @@ struct ContentView: View {
         ZStack {
             selectedTheme.backgroundColor.edgesIgnoringSafeArea(.all)
             
-            VStack(spacing: 40) {
-                // Header & Theme Picker
-                HStack {
-                    Text("Pomodoro")
-                        .font(.largeTitle)
-                        .fontWeight(.bold)
-                        .foregroundColor(selectedTheme.primaryTextColor)
-                    
-                    Spacer()
-                    
-                    Menu {
-                        Picker("Theme", selection: $selectedTheme) {
-                            ForEach(Theme.allThemes) { theme in
-                                Text(theme.name).tag(theme)
-                            }
-                        }
-                    } label: {
-                        Image(systemName: "paintpalette.fill")
-                            .foregroundColor(selectedTheme.accentColor)
-                            .font(.title2)
-                    }
-                }
-                .padding(.horizontal)
-                .padding(.top, 40) // Adjust for status bar/safe area if needed
+            VStack(spacing: 20) {
+                Spacer()
+                
+                Spacer()
                 
                 // Timer Display
                 Text(timeString(from: timerManager.timeRemaining))
                     .font(.system(size: 80, weight: .bold, design: .monospaced))
                     .foregroundColor(selectedTheme.primaryTextColor)
                     .padding(20)
+                
+                Spacer()
                 
                 // Duration Selection
                 HStack(spacing: 30) {
@@ -63,6 +45,7 @@ struct ContentView: View {
                             .cornerRadius(10)
                     }
                 }
+                .padding(.bottom, 20)
                 
                 // Controls
                 HStack(spacing: 40) {
@@ -84,12 +67,31 @@ struct ContentView: View {
                             .foregroundColor(selectedTheme.buttonBackgroundColor)
                     }
                 }
+                .padding(.bottom, 20)
                 
-                // Settings
-                Toggle("Announce Time Left", isOn: $timerManager.announceTime)
-                    .padding()
-                    .foregroundColor(selectedTheme.secondaryTextColor)
-                    .tint(selectedTheme.accentColor)
+                // Settings & Theme
+                HStack {
+                    Toggle("Announce Time Left", isOn: $timerManager.announceTime)
+                        .foregroundColor(selectedTheme.secondaryTextColor)
+                        .tint(selectedTheme.accentColor)
+                    
+                    Spacer()
+                    
+                    Menu {
+                        Picker("Theme", selection: $selectedTheme) {
+                            ForEach(Theme.allThemes) { theme in
+                                Text(theme.name).tag(theme)
+                            }
+                        }
+                    } label: {
+                        Image(systemName: "paintpalette.fill")
+                            .foregroundColor(selectedTheme.accentColor)
+                            .font(.title2)
+                            .padding()
+                    }
+                }
+                .padding()
+                .padding(.bottom, 20)
             }
             .padding()
             
@@ -98,19 +100,19 @@ struct ContentView: View {
                 // Background Track
                 ContainerRelativeShape()
                     //.inset(by: 2) // Optional: fine-tune if needed, but standard shape should match
-                    .stroke(selectedTheme.trackColor, lineWidth: 15)
+                    .stroke(selectedTheme.trackColor, lineWidth: 14)
                 
                 // Progress
                 // Segment 1: From Top (0.75) to Right (1.0)
                 ContainerRelativeShape()
                     .trim(from: 0.75, to: min(1.0, 0.75 + CGFloat(timerManager.progress)))
-                    .stroke(selectedTheme.accentColor, style: StrokeStyle(lineWidth: 15, lineCap: .round, lineJoin: .round))
+                    .stroke(selectedTheme.accentColor, style: StrokeStyle(lineWidth: 14, lineCap: .round, lineJoin: .round))
                     .animation(.linear(duration: 0.1), value: timerManager.progress)
                 
                 // Segment 2: From Right (0.0) to Top (0.75) - Handles wrap
                 ContainerRelativeShape()
                     .trim(from: 0.0, to: CGFloat(max(0.0, timerManager.progress - 0.25)))
-                    .stroke(selectedTheme.accentColor, style: StrokeStyle(lineWidth: 15, lineCap: .round, lineJoin: .round))
+                    .stroke(selectedTheme.accentColor, style: StrokeStyle(lineWidth: 14, lineCap: .round, lineJoin: .round))
                     .animation(.linear(duration: 0.1), value: timerManager.progress)
             }
             .padding(7)
