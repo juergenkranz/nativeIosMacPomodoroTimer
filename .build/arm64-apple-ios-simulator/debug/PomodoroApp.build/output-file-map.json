@@ -23,6 +23,13 @@
     "swift-dependencies": "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-ios-simulator/debug/PomodoroApp.build/PomodoroApp.swiftdeps",
     "diagnostics": "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-ios-simulator/debug/PomodoroApp.build/PomodoroApp.dia"
   },
+  "/Users/jk/dev/iphonePomodoroTimer/Sources/PomodoroApp/Theme.swift": {
+    "dependencies": "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-ios-simulator/debug/PomodoroApp.build/Theme.d",
+    "object": "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-ios-simulator/debug/PomodoroApp.build/Theme.swift.o",
+    "swiftmodule": "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-ios-simulator/debug/PomodoroApp.build/Theme~partial.swiftmodule",
+    "swift-dependencies": "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-ios-simulator/debug/PomodoroApp.build/Theme.swiftdeps",
+    "diagnostics": "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-ios-simulator/debug/PomodoroApp.build/Theme.dia"
+  },
   "/Users/jk/dev/iphonePomodoroTimer/Sources/PomodoroApp/TimerManager.swift": {
     "dependencies": "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-ios-simulator/debug/PomodoroApp.build/TimerManager.d",
     "object": "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-ios-simulator/debug/PomodoroApp.build/TimerManager.swift.o",

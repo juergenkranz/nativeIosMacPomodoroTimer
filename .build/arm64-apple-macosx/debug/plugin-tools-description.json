@@ -36,6 +36,10 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/jk/dev/iphonePomodoroTimer/Sources/PomodoroApp/Theme.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/jk/dev/iphonePomodoroTimer/Sources/PomodoroApp/TimerManager.swift"
         },
         {
@@ -54,6 +58,7 @@
         "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-ios-simulator/debug/PomodoroApp.build/AudioService.swift.o",
         "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-ios-simulator/debug/PomodoroApp.build/ContentView.swift.o",
         "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-ios-simulator/debug/PomodoroApp.build/PomodoroApp.swift.o",
+        "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-ios-simulator/debug/PomodoroApp.build/Theme.swift.o",
         "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-ios-simulator/debug/PomodoroApp.build/TimerManager.swift.o"
       ],
       "otherArguments" : [
@@ -132,6 +137,10 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-ios-simulator/debug/PomodoroApp.build/Theme.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-ios-simulator/debug/PomodoroApp.build/TimerManager.swift.o"
         },
         {
@@ -144,6 +153,7 @@
         "/Users/jk/dev/iphonePomodoroTimer/Sources/PomodoroApp/AudioService.swift",
         "/Users/jk/dev/iphonePomodoroTimer/Sources/PomodoroApp/ContentView.swift",
         "/Users/jk/dev/iphonePomodoroTimer/Sources/PomodoroApp/PomodoroApp.swift",
+        "/Users/jk/dev/iphonePomodoroTimer/Sources/PomodoroApp/Theme.swift",
         "/Users/jk/dev/iphonePomodoroTimer/Sources/PomodoroApp/TimerManager.swift"
       ],
       "tempsPath" : "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-ios-simulator/debug/PomodoroApp.build",
@@ -164,6 +174,7 @@
       "/Users/jk/dev/iphonePomodoroTimer/Sources/PomodoroApp/AudioService.swift",
       "/Users/jk/dev/iphonePomodoroTimer/Sources/PomodoroApp/ContentView.swift",
       "/Users/jk/dev/iphonePomodoroTimer/Sources/PomodoroApp/PomodoroApp.swift",
+      "/Users/jk/dev/iphonePomodoroTimer/Sources/PomodoroApp/Theme.swift",
       "/Users/jk/dev/iphonePomodoroTimer/Sources/PomodoroApp/TimerManager.swift",
       "-I",
       "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-ios-simulator/debug/Modules",
@@ -267,6 +278,10 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/jk/dev/iphonePomodoroTimer/Sources/PomodoroApp/Theme.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/jk/dev/iphonePomodoroTimer/Sources/PomodoroApp/TimerManager.swift"
         }
       ],
@@ -290,6 +305,10 @@
         {
           "kind" : "file",
           "name" : "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-ios-simulator/debug/PomodoroApp.build/PomodoroApp.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-ios-simulator/debug/PomodoroApp.build/Theme.swift.o"
         },
         {
           "kind" : "file",
