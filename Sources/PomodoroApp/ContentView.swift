@@ -15,27 +15,10 @@ struct ContentView: View {
                     .foregroundColor(.white)
                 
                 // Timer Display
-                ZStack {
-                    // Background Circle
-                    Circle()
-                        .stroke(lineWidth: 20)
-                        .opacity(0.3)
-                        .foregroundColor(Color.gray)
-                    
-                    // Progress Circle
-                    Circle()
-                        .trim(from: 0.0, to: CGFloat(timerManager.progress))
-                        .stroke(style: StrokeStyle(lineWidth: 20, lineCap: .round, lineJoin: .round))
-                        .foregroundColor(Color.orange)
-                        .rotationEffect(Angle(degrees: 270.0))
-                        .animation(.linear(duration: 0.1), value: timerManager.progress)
-                    
-                    // Time Text
-                    Text(timeString(from: timerManager.timeRemaining))
-                        .font(.system(size: 80, weight: .bold, design: .monospaced))
-                        .foregroundColor(.white)
-                }
-                .padding(20)
+                Text(timeString(from: timerManager.timeRemaining))
+                    .font(.system(size: 80, weight: .bold, design: .monospaced))
+                    .foregroundColor(.white)
+                    .padding(20)
                 
                 // Duration Selection
                 HStack(spacing: 30) {
@@ -90,6 +73,29 @@ struct ContentView: View {
                     .tint(.orange)
             }
             .padding()
+            
+            // Edge Progress Indicator
+            ZStack {
+                // Background Track
+                ContainerRelativeShape()
+                    //.inset(by: 2) // Optional: fine-tune if needed, but standard shape should match
+                    .stroke(Color.gray.opacity(0.3), lineWidth: 15)
+                
+                // Progress
+                // Segment 1: From Top (0.75) to Right (1.0)
+                ContainerRelativeShape()
+                    .trim(from: 0.75, to: min(1.0, 0.75 + CGFloat(timerManager.progress)))
+                    .stroke(Color.orange, style: StrokeStyle(lineWidth: 15, lineCap: .round, lineJoin: .round))
+                    .animation(.linear(duration: 0.1), value: timerManager.progress)
+                
+                // Segment 2: From Right (0.0) to Top (0.75) - Handles wrap
+                ContainerRelativeShape()
+                    .trim(from: 0.0, to: CGFloat(max(0.0, timerManager.progress - 0.25)))
+                    .stroke(Color.orange, style: StrokeStyle(lineWidth: 15, lineCap: .round, lineJoin: .round))
+                    .animation(.linear(duration: 0.1), value: timerManager.progress)
+            }
+            .padding(8) // Reduced padding or consistent padding, but with correct shape
+            .edgesIgnoringSafeArea(.all)
         }
     }
     
