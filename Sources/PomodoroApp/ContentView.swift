@@ -94,7 +94,7 @@ struct ContentView: View {
                     .stroke(Color.orange, style: StrokeStyle(lineWidth: 15, lineCap: .round, lineJoin: .round))
                     .animation(.linear(duration: 0.1), value: timerManager.progress)
             }
-            .padding(8) // Reduced padding or consistent padding, but with correct shape
+            .padding(7)
             .edgesIgnoringSafeArea(.all)
         }
     }
