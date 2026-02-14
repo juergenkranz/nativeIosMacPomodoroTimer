@@ -11,7 +11,14 @@ struct Theme: Identifiable, Hashable {
     let trackColor: Color
     
     
-
+    
+    static func == (lhs: Theme, rhs: Theme) -> Bool {
+        lhs.id == rhs.id
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
     
     // Default Theme (Current)
     static let standard = Theme(
@@ -108,6 +115,18 @@ struct Theme: Identifiable, Hashable {
         buttonBackgroundColor: Color(red: 0.3, green: 0.1, blue: 0.4),
         trackColor: Color(red: 0.5, green: 0.2, blue: 0.6)
     )
+
+    // Tron Ares Theme
+    static let tronAres = Theme(
+        id: "tronAres",
+        name: "Tron Ares",
+        backgroundColor: Color(red: 0.05, green: 0.0, blue: 0.0), // Almost Black/Dark Red tint
+        primaryTextColor: Color(red: 1.0, green: 0.1, blue: 0.1), // Neon Red
+        secondaryTextColor: Color.white,
+        accentColor: Color(red: 1.0, green: 0.0, blue: 0.0), // Pure Red
+        buttonBackgroundColor: Color(red: 0.2, green: 0.0, blue: 0.0), // Dark Red
+        trackColor: Color(red: 0.2, green: 0.1, blue: 0.1)
+    )
     
-    static let allThemes = [standard, neon, retro80s, matrix, cyberpunk, vaporwave, sunset, cottonCandy]
+    static let allThemes = [standard, neon, retro80s, matrix, cyberpunk, vaporwave, sunset, cottonCandy, tronAres]
 }
