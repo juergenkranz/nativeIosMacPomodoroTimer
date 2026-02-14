@@ -30,6 +30,13 @@
     "swift-dependencies": "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-ios-simulator/debug/PomodoroApp.build/Theme.swiftdeps",
     "diagnostics": "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-ios-simulator/debug/PomodoroApp.build/Theme.dia"
   },
+  "/Users/jk/dev/iphonePomodoroTimer/Sources/PomodoroApp/ThemePickerView.swift": {
+    "dependencies": "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-ios-simulator/debug/PomodoroApp.build/ThemePickerView.d",
+    "object": "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-ios-simulator/debug/PomodoroApp.build/ThemePickerView.swift.o",
+    "swiftmodule": "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-ios-simulator/debug/PomodoroApp.build/ThemePickerView~partial.swiftmodule",
+    "swift-dependencies": "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-ios-simulator/debug/PomodoroApp.build/ThemePickerView.swiftdeps",
+    "diagnostics": "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-ios-simulator/debug/PomodoroApp.build/ThemePickerView.dia"
+  },
   "/Users/jk/dev/iphonePomodoroTimer/Sources/PomodoroApp/TimerManager.swift": {
     "dependencies": "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-ios-simulator/debug/PomodoroApp.build/TimerManager.d",
     "object": "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-ios-simulator/debug/PomodoroApp.build/TimerManager.swift.o",

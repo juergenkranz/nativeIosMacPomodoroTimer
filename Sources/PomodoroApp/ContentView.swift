@@ -77,28 +77,7 @@ struct ContentView: View {
                     
                     // Theme Picker & Settings
                     VStack(spacing: 15) {
-                        Menu {
-                            ForEach(Theme.allThemes) { theme in
-                                Button(action: {
-                                    selectedThemeID = theme.id
-                                }) {
-                                    HStack {
-                                        Text(theme.name)
-                                        if selectedThemeID == theme.id {
-                                            Image(systemName: "checkmark")
-                                        }
-                                    }
-                                }
-                            }
-                        } label: {
-                            Image(systemName: "paintpalette.fill")
-                                .foregroundColor(selectedTheme.accentColor)
-                                .font(.largeTitle)
-                                .padding()
-                        }
-                        .onChange(of: selectedThemeID) { newValue in
-                            print("Theme changed to: \(newValue)")
-                        }
+                        ThemePickerView()
                         
                         // Toggles (Smaller, underneath)
                         HStack(spacing: 20) {
