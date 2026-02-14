@@ -17,10 +17,10 @@
 
   ],
   "swiftCommands" : {
-    "C.PomodoroApp-arm64-apple-macosx26.0-debug.module" : {
+    "C.PomodoroApp-arm64-apple-ios17.0-simulator-debug.module" : {
       "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
-      "fileList" : "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-macosx/debug/PomodoroApp.build/sources",
-      "importPath" : "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-macosx/debug/Modules",
+      "fileList" : "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-ios-simulator/debug/PomodoroApp.build/sources",
+      "importPath" : "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-ios-simulator/debug/Modules",
       "inputs" : [
         {
           "kind" : "file",
@@ -44,31 +44,31 @@
         },
         {
           "kind" : "file",
-          "name" : "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+          "name" : "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-ios-simulator/debug/swift-version--58304C5D6DBC2206.txt"
         },
         {
           "kind" : "file",
-          "name" : "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-macosx/debug/PomodoroApp.build/sources"
+          "name" : "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-ios-simulator/debug/PomodoroApp.build/sources"
         }
       ],
       "isLibrary" : false,
       "moduleName" : "PomodoroApp",
-      "moduleOutputPath" : "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-macosx/debug/Modules/PomodoroApp.swiftmodule",
+      "moduleOutputPath" : "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-ios-simulator/debug/Modules/PomodoroApp.swiftmodule",
       "objects" : [
-        "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-macosx/debug/PomodoroApp.build/AudioService.swift.o",
-        "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-macosx/debug/PomodoroApp.build/ContentView.swift.o",
-        "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-macosx/debug/PomodoroApp.build/PomodoroApp.swift.o",
-        "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-macosx/debug/PomodoroApp.build/Theme.swift.o",
-        "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-macosx/debug/PomodoroApp.build/TimerManager.swift.o"
+        "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-ios-simulator/debug/PomodoroApp.build/AudioService.swift.o",
+        "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-ios-simulator/debug/PomodoroApp.build/ContentView.swift.o",
+        "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-ios-simulator/debug/PomodoroApp.build/PomodoroApp.swift.o",
+        "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-ios-simulator/debug/PomodoroApp.build/Theme.swift.o",
+        "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-ios-simulator/debug/PomodoroApp.build/TimerManager.swift.o"
       ],
       "otherArguments" : [
         "-target",
-        "arm64-apple-macosx14.0",
+        "arm64-apple-ios17.0-simulator",
         "-incremental",
         "-enable-batch-mode",
         "-serialize-diagnostics",
         "-index-store-path",
-        "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-macosx/debug/index/store",
+        "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-ios-simulator/debug/index/store",
         "-Onone",
         "-enable-testing",
         "-j10",
@@ -76,7 +76,7 @@
         "-DDEBUG",
         "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
         "-module-cache-path",
-        "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-macosx/debug/ModuleCache",
+        "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-ios-simulator/debug/ModuleCache",
         "-parseable-output",
         "-Xfrontend",
         "-entry-point-function-name",
@@ -88,28 +88,32 @@
         "-plugin-path",
         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
         "-sdk",
-        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.2.sdk",
         "-F",
-        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks",
         "-F",
-        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/PrivateFrameworks",
         "-I",
-        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib",
         "-L",
-        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib",
         "-g",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.2.sdk",
+        "-target",
+        "arm64-apple-ios17.0-simulator",
         "-Xcc",
         "-isysroot",
         "-Xcc",
-        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.2.sdk",
         "-Xcc",
         "-F",
         "-Xcc",
-        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks",
         "-Xcc",
         "-F",
         "-Xcc",
-        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/PrivateFrameworks",
         "-Xcc",
         "-fPIC",
         "-Xcc",
@@ -117,31 +121,31 @@
         "-package-name",
         "iphonepomodorotimer"
       ],
-      "outputFileMapPath" : "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-macosx/debug/PomodoroApp.build/output-file-map.json",
+      "outputFileMapPath" : "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-ios-simulator/debug/PomodoroApp.build/output-file-map.json",
       "outputs" : [
         {
           "kind" : "file",
-          "name" : "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-macosx/debug/PomodoroApp.build/AudioService.swift.o"
+          "name" : "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-ios-simulator/debug/PomodoroApp.build/AudioService.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-macosx/debug/PomodoroApp.build/ContentView.swift.o"
+          "name" : "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-ios-simulator/debug/PomodoroApp.build/ContentView.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-macosx/debug/PomodoroApp.build/PomodoroApp.swift.o"
+          "name" : "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-ios-simulator/debug/PomodoroApp.build/PomodoroApp.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-macosx/debug/PomodoroApp.build/Theme.swift.o"
+          "name" : "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-ios-simulator/debug/PomodoroApp.build/Theme.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-macosx/debug/PomodoroApp.build/TimerManager.swift.o"
+          "name" : "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-ios-simulator/debug/PomodoroApp.build/TimerManager.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-macosx/debug/Modules/PomodoroApp.swiftmodule"
+          "name" : "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-ios-simulator/debug/Modules/PomodoroApp.swiftmodule"
         }
       ],
       "prepareForIndexing" : false,
@@ -152,7 +156,7 @@
         "/Users/jk/dev/iphonePomodoroTimer/Sources/PomodoroApp/Theme.swift",
         "/Users/jk/dev/iphonePomodoroTimer/Sources/PomodoroApp/TimerManager.swift"
       ],
-      "tempsPath" : "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-macosx/debug/PomodoroApp.build",
+      "tempsPath" : "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-ios-simulator/debug/PomodoroApp.build",
       "wholeModuleOptimization" : false
     }
   },
@@ -173,14 +177,14 @@
       "/Users/jk/dev/iphonePomodoroTimer/Sources/PomodoroApp/Theme.swift",
       "/Users/jk/dev/iphonePomodoroTimer/Sources/PomodoroApp/TimerManager.swift",
       "-I",
-      "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-macosx/debug/Modules",
+      "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-ios-simulator/debug/Modules",
       "-target",
-      "arm64-apple-macosx14.0",
+      "arm64-apple-ios17.0-simulator",
       "-incremental",
       "-enable-batch-mode",
       "-serialize-diagnostics",
       "-index-store-path",
-      "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-macosx/debug/index/store",
+      "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-ios-simulator/debug/index/store",
       "-Onone",
       "-enable-testing",
       "-j10",
@@ -188,7 +192,7 @@
       "-DDEBUG",
       "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
       "-module-cache-path",
-      "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-macosx/debug/ModuleCache",
+      "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-ios-simulator/debug/ModuleCache",
       "-parseable-output",
       "-Xfrontend",
       "-entry-point-function-name",
@@ -200,28 +204,32 @@
       "-plugin-path",
       "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
       "-sdk",
-      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.2.sdk",
       "-F",
-      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks",
       "-F",
-      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/PrivateFrameworks",
       "-I",
-      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib",
       "-L",
-      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib",
       "-g",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.2.sdk",
+      "-target",
+      "arm64-apple-ios17.0-simulator",
       "-Xcc",
       "-isysroot",
       "-Xcc",
-      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.2.sdk",
       "-Xcc",
       "-F",
       "-Xcc",
-      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks",
       "-Xcc",
       "-F",
       "-Xcc",
-      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/PrivateFrameworks",
       "-Xcc",
       "-fPIC",
       "-Xcc",
@@ -249,21 +257,7 @@
     }
   },
   "writeCommands" : {
-    "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-macosx/debug/PomodoroApp-entitlement.plist" : {
-      "alwaysOutOfDate" : false,
-      "inputs" : [
-        {
-          "kind" : "virtual",
-          "name" : "<entitlement-plist>"
-        },
-        {
-          "kind" : "virtual",
-          "name" : "<com.apple.security.get-task-allow>"
-        }
-      ],
-      "outputFilePath" : "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-macosx/debug/PomodoroApp-entitlement.plist"
-    },
-    "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-macosx/debug/PomodoroApp.build/sources" : {
+    "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-ios-simulator/debug/PomodoroApp.build/sources" : {
       "alwaysOutOfDate" : false,
       "inputs" : [
         {
@@ -291,9 +285,9 @@
           "name" : "/Users/jk/dev/iphonePomodoroTimer/Sources/PomodoroApp/TimerManager.swift"
         }
       ],
-      "outputFilePath" : "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-macosx/debug/PomodoroApp.build/sources"
+      "outputFilePath" : "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-ios-simulator/debug/PomodoroApp.build/sources"
     },
-    "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-macosx/debug/PomodoroApp.product/Objects.LinkFileList" : {
+    "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-ios-simulator/debug/PomodoroApp.product/Objects.LinkFileList" : {
       "alwaysOutOfDate" : false,
       "inputs" : [
         {
@@ -302,28 +296,28 @@
         },
         {
           "kind" : "file",
-          "name" : "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-macosx/debug/PomodoroApp.build/AudioService.swift.o"
+          "name" : "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-ios-simulator/debug/PomodoroApp.build/AudioService.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-macosx/debug/PomodoroApp.build/ContentView.swift.o"
+          "name" : "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-ios-simulator/debug/PomodoroApp.build/ContentView.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-macosx/debug/PomodoroApp.build/PomodoroApp.swift.o"
+          "name" : "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-ios-simulator/debug/PomodoroApp.build/PomodoroApp.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-macosx/debug/PomodoroApp.build/Theme.swift.o"
+          "name" : "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-ios-simulator/debug/PomodoroApp.build/Theme.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-macosx/debug/PomodoroApp.build/TimerManager.swift.o"
+          "name" : "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-ios-simulator/debug/PomodoroApp.build/TimerManager.swift.o"
         }
       ],
-      "outputFilePath" : "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-macosx/debug/PomodoroApp.product/Objects.LinkFileList"
+      "outputFilePath" : "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-ios-simulator/debug/PomodoroApp.product/Objects.LinkFileList"
     },
-    "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt" : {
+    "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-ios-simulator/debug/swift-version--58304C5D6DBC2206.txt" : {
       "alwaysOutOfDate" : true,
       "inputs" : [
         {
@@ -335,7 +329,7 @@
           "name" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
         }
       ],
-      "outputFilePath" : "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+      "outputFilePath" : "/Users/jk/dev/iphonePomodoroTimer/.build/arm64-apple-ios-simulator/debug/swift-version--58304C5D6DBC2206.txt"
     }
   }
 }
