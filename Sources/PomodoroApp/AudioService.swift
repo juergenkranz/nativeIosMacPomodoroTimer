@@ -23,6 +23,23 @@ class AudioService: NSObject, AVSpeechSynthesizerDelegate {
         AudioServicesPlaySystemSound(1057) // Short beep
     }
     
+    private var alarmTimer: Timer?
+    
+    func startAlarmLoop() {
+        stopAlarmLoop() // Ensure no existing loop
+        playEndTone()
+        
+        // Loop every 2 seconds (adjust based on sound length)
+        alarmTimer = Timer.scheduledTimer(withTimeInterval: 2.0, repeats: true) { [weak self] _ in
+            self?.playEndTone()
+        }
+    }
+    
+    func stopAlarmLoop() {
+        alarmTimer?.invalidate()
+        alarmTimer = nil
+    }
+    
     func announce(text: String) {
         let utterance = AVSpeechUtterance(string: text)
         utterance.rate = 0.5

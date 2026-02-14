@@ -71,9 +71,15 @@ struct ContentView: View {
                 
                 // Settings & Theme
                 HStack {
-                    Toggle("Announce Time Left", isOn: $timerManager.announceTime)
-                        .foregroundColor(selectedTheme.secondaryTextColor)
-                        .tint(selectedTheme.accentColor)
+                    VStack(alignment: .leading) {
+                        Toggle("Announce Time Left", isOn: $timerManager.announceTime)
+                            .foregroundColor(selectedTheme.secondaryTextColor)
+                            .tint(selectedTheme.accentColor)
+                        
+                        Toggle("Loop Alarm", isOn: $timerManager.loopAlarm)
+                            .foregroundColor(selectedTheme.secondaryTextColor)
+                            .tint(selectedTheme.accentColor)
+                    }
                     
                     Spacer()
                     

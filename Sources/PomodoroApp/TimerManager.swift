@@ -7,6 +7,8 @@ class TimerManager: ObservableObject {
     @Published var isRunning = false
     @Published var announceTime = false
     
+    @Published var loopAlarm = true
+    
     private var timer: Timer?
     private let audioService = AudioService()
     
@@ -51,6 +53,7 @@ class TimerManager: ObservableObject {
         isRunning = false
         timer?.invalidate()
         timer = nil
+        audioService.stopAlarmLoop()
     }
     
     func reset() {
@@ -66,7 +69,12 @@ class TimerManager: ObservableObject {
         if remaining <= 0 {
             stop()
             timeRemaining = 0
-            audioService.playEndTone()
+            
+            if loopAlarm {
+                audioService.startAlarmLoop()
+            } else {
+                audioService.playEndTone()
+            }
             return
         }
         

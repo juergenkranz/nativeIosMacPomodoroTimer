@@ -11,13 +11,7 @@ struct Theme: Identifiable, Hashable {
     let trackColor: Color
     
     
-    static func == (lhs: Theme, rhs: Theme) -> Bool {
-        lhs.id == rhs.id
-    }
-    
-    func hash(into hasher: inout Hasher) {
-        hasher.combine(id)
-    }
+
     
     // Default Theme (Current)
     static let standard = Theme(
